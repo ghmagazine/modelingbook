@@ -4,7 +4,7 @@ def cosine_similarity(u_i, u_j):
     denom_j = 0.0
 
     for m in ITEMS:
-        num += c[u_i][k] * c[u_j][m]
+        num += c[u_i][m] * c[u_j][m]
         denom_i += c[u_i][m] ** 2
         denom_j += c[u_j][m] ** 2
 
